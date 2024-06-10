@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - HTML form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Style sheet add -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="container" class="container">
+        <center>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Survey Form using DOM</p>
+        </center>
+        <div class="form">
+            <form id="form" class="survey-form" onsubmit="">
+                <div class="form-group">
+                    <label id="name-label" for="firstName">First Name:</label>
+                    <input type="text" name="first-name" value="" id="first-name" class="form-control text" placeholder="Enter First Name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label id="name-label" for="lastName">Last Name:</label>
+                    <input type="text" value="" name="last-name" id="last-name" class="form-control text" placeholder="Enter Last Name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email:</label>
+                    <input type="email" value="" name="email" id="email" class="form-control text" placeholder="Enter Email"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label id="address-label" for="address">Address:</label>
+                    <textarea name="address" id="address" class="form-control text" placeholder="Enter your address"
+                        required></textarea>
+                </div>
+                <div class="form-group">
+                    <label id="pincode-label" for="pincode">Pincode:</label>
+                    <input type="text" value="" name="pincode" id="pincode" class="form-control text" placeholder="Enter pincode"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="Gender">Gender: </label>
+                    <div class="form-check">
+                        <input type="radio" value="Male" name="gender" id="gender" class="form-check-input">
+                        <label id="male-label" for="gender-male" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" value="Female" name="gender" id="gender" class="form-check-input">
+                        <label id="female-label" for="gender-male" class="form-check-label">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="food">Food:</label>
+                    <div class="form-check">
+                        <input type="checkbox" id="food" name="food" value="pizza" class="form-check-input food">
+                        <label for="Pizza" class="form-check-label">Pizza</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="food" name="food" value="Sushi" class="form-check-input food">
+                        <label for="Sushi" class="form-check-label">Sushi</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="food" name="food" value="Briyani" class="form-check-input food">
+                        <label for="Briyani" class="form-check-label">Briyani</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="food" name="food" value="Salad" class="form-check-input food">
+                        <label for="Salad" class="form-check-label">Salad</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="food" name="food" value="Burgers" class="form-check-input food">
+                        <label for="Burgers" class="form-check-label">Burgers</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <input type="text" name="state" id="state" class="form-control text" placeholder="Enter state"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" id="country" class="form-control text" placeholder="Enter country"
+                        required>
+                </div>
+                <div class="submit">
+                    <button id="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Pincode</th>
+                        <th>Gender</th>
+                        <th>Food</th>
+                        <th>State</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

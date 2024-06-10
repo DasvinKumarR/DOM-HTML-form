@@ -1,0 +1,15 @@
+/* Design code for text and text area tag */
+.text{
+    width: 60%;
+}
+/* design code for table div */
+.table{
+    margin-top: 25px;
+    overflow: auto;
+}
+/* Design code for screen adjust */
+@media only screen and (max-width:500px){
+    .text{
+        width: 100%;
+    }
+}
